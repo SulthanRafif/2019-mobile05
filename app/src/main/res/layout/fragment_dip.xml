@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Dip">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/Comment"
+        android:src="@drawable/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="7dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Komentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/Comment"
+        android:textColor="@color/hitam"
+
+        />
+
+    <ImageView
+        android:id="@+id/Star1"
+        android:src="@drawable/stars"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@id/pushUpKet"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/Star2"
+        android:src="@drawable/stars"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@id/pushUpKet"
+        app:layout_constraintStart_toEndOf="@id/Star1"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="359dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/Star3"
+        android:src="@drawable/stars"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@id/pushUpKet"
+        app:layout_constraintStart_toEndOf="@id/Star2"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="335dp"
+        />
+
+    <ImageView
+        android:id="@+id/Star4"
+        android:src="@drawable/stars"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@id/pushUpKet"
+        app:layout_constraintStart_toEndOf="@id/Star3"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="312dp"
+        />
+
+    <ImageView
+        android:id="@+id/Star5"
+        android:src="@drawable/stars"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@id/pushUpKet"
+        app:layout_constraintStart_toEndOf="@+id/Star4"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="288dp"
+        />
+
+    <TextView
+        android:id="@+id/DipsJudul"
+        android:text="Dips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/hitam"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Star1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/Suka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/Like"
+        android:text="154"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/hitam"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/Like"
+        android:src="@drawable/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/Komentar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/UserA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/usera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Suka" />
+
+    <ImageView
+        android:id="@+id/More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/morelike"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toEndOf="@id/UserB" />
+
+    <ImageView
+        android:id="@+id/UserB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/userb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@id/UserA" />
+
+    <ImageView
+        android:id="@+id/Top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/top"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/pushUpOrang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/DipsJudul"
+        android:src="@drawable/haspusup"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/pushUpKet"
+        android:text='The handstand push-up (press-up) - also called the vertical push-up (press up) or the inverted push-up (press-up) also called "commandos"- is a type of push-up exercise where the body is positioned in a handstand. To prepare the strength until one has built adequate balance.'
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/Comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/hitam"
+
+        />
+
+    <TextView
+        android:id="@+id/Advanced"
+        android:text="Advanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/Star5"
+        app:layout_constraintBottom_toTopOf="@id/pushUpKet"
+        android:textStyle="bold"
+        android:textColor="@color/hitam"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="16dp"
+
+
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>>
+
+</FrameLayout>
